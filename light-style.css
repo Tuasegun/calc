@@ -1,0 +1,79 @@
+:root{
+    --yellow : #e3c567;
+    --background: #d1462f;
+    --screen:  #573d1c;
+    --grey: #c8963e;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20vh;
+    background-color: var(--background);
+}
+.calculator{
+    flex: 0 0 95%;
+}
+.screen{
+    width: 100%;
+    font-size: 7rem;
+    padding: 0.5rem;
+    background: var(--screen);
+    color: white;
+    border: none;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.5s linear;
+}
+button{
+    flex: 0 0 25%;
+    border: 1px solid black;
+    padding: 0.25rem;
+    transition: all 2s ease;
+}
+button:hover{
+ background: #d9ae61;
+}
+.btn-yellow{
+    background: var(--yellow);
+    color: white;
+}
+.btn-grey{
+    background: var(--grey);
+}
+.btn,.btn-equal,.btn-clear{
+    font-size: 4rem;
+}
+.btn-equal{
+    background: #00916E;
+}
+.btn-clear{
+    background: #fa003f;
+    
+}
+#theme-toggle{
+    position:relative !important;
+    display: inline-block !important;
+    font-weight: bold !important;
+    color: #ffffff !important;
+    background: #00bcd4;
+    border: double 4px #668ad8;
+    transition: .6s;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+}
+#theme-toggle:hover{
+    -webkit-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
